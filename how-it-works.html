@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How CloudDIET Works — Read-only Azure Profiling | CloudxAi</title>
+<meta name="description" content="Daily read-only profiling feeds Azure-specific analysis, prioritized actions, and measurable cost outcomes — with service-aware engineering intelligence.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="CloudxAi home">
+      <img class="brand-logo" src="assets/cloudxai-logo.png" alt="CloudxAi" width="160" height="42">
+    </a>
+    <nav class="nav-links">
+      <a href="overview.html">Overview</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="platform.html">Platform</a>
+      <a href="partners.html">Partners</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="security.html">Security</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="get-started.html">Get started free</a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <div class="mm-top">
+    <span class="brand brand-on-dark"><img class="brand-logo" src="assets/cloudxai-logo.png" alt="CloudxAi" width="160" height="42"></span>
+    <button class="mm-close" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="overview.html">Overview</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="platform.html">Platform</a>
+    <a href="partners.html">Partners</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="security.html">Security</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <a class="btn btn-grad" href="get-started.html">Get started free</a>
+  <div class="mm-theme" role="group" aria-label="Color theme">
+    <button class="mm-tbtn" data-set-theme="light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg> Light</button>
+    <button class="mm-tbtn" data-set-theme="dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg> Dark</button>
+  </div>
+</div>
+
+<div class="theme-toggle" role="group" aria-label="Color theme">
+  <button data-set-theme="light" aria-label="Light mode" title="Light mode">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+  <button data-set-theme="dark" aria-label="Dark mode" title="Dark mode">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"><div class="hero-grid"></div><span class="blob b1"></span><span class="blob b2"></span></div>
+  <div class="wrap">
+    <p class="crumb">How CloudDIET works</p>
+    <h1>Daily read-only profiling, turned into <span class="grad-text">actionable savings</span></h1>
+    <p>Daily read-only profiling flows into Azure-specific analysis, prioritized actions, and measurable cost outcomes — then keeps the loop closed as Azure changes.</p>
+  </div>
+</section>
+
+<!-- 4-STEP FLOW -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head anim-up">
+      <span class="eyebrow">The pipeline</span>
+      <h2>From Azure data to measurable cloud efficiency</h2>
+    </div>
+    <div class="grid g-4">
+      <div class="card feature anim-up">
+        <div class="num">1 · DATA IN</div>
+        <h3>Read-only Azure profile</h3>
+        <p>Billing, telemetry, and configuration metadata collected without data-plane access.</p>
+        <ul class="checks"><li>Resource configuration</li><li>Usage metrics</li><li>Billing details</li></ul>
+        <p style="font-size:13.5px;color:var(--mute);margin-top:12px">Normalized by subscription, resource, and service.</p>
+      </div>
+      <div class="card feature anim-up d1">
+        <div class="num">2 · INTELLIGENCE</div>
+        <h3>Analyze workload fit</h3>
+        <p>Find underutilization, waste, and misconfigurations, then rank opportunities by savings, effort, and risk.</p>
+        <p style="font-weight:600;color:var(--azure);margin-top:14px">Utilization · Fit · Waste</p>
+        <p style="font-size:13.5px;color:var(--mute)">Resource-level pattern detection.</p>
+      </div>
+      <div class="card feature anim-up d2">
+        <div class="num">3 · OUTPUT &amp; ACTION</div>
+        <h3>Recommend and track</h3>
+        <p>Dashboards and drilldowns, prescriptive actions, and realized-savings tracking.</p>
+        <div class="chips" style="margin-top:14px"><span class="chip min">Minimal</span><span class="chip mod">Moderate</span><span class="chip plan">Planning</span></div>
+      </div>
+      <div class="card feature anim-up d3">
+        <div class="num">4 · OUTCOMES</div>
+        <h3>Measurable efficiency</h3>
+        <ul class="checks"><li><b>Lower cost</b> — high-confidence savings actions</li><li><b>Better utilization</b> — rightsized workloads</li><li><b>Reduced waste</b> — less idle &amp; orphaned spend</li></ul>
+      </div>
+    </div>
+    <div class="banner anim-up" style="margin-top:24px">Continuous daily re-profiling — CloudDIET keeps the loop closed as Azure changes.</div>
+  </div>
+</section>
+
+<!-- SERVICE-SPECIFIC INTELLIGENCE -->
+<section class="section" style="background:var(--panel)">
+  <div class="wrap">
+    <div class="section-head anim-up">
+      <span class="eyebrow">Service-specific engineering intelligence</span>
+      <h2>Azure services don't optimize the same way</h2>
+      <p>CloudDIET profiles billing, configuration, and usage so it can apply the right optimization logic to each service family.</p>
+    </div>
+    <div class="grid g-2">
+      <div class="card anim-up">
+        <h3>Azure Cosmos DB</h3>
+        <ul class="checks">
+          <li><b>Capacity choices:</b> Provisioned, Autoscale, serverless, burst, and vCore models.</li>
+          <li><b>API &amp; data-model differences:</b> SQL, Mongo, Cassandra, Graph, PostgreSQL, and Table.</li>
+          <li><b>Topology levers:</b> replicas, partitions, consistency, and indexing.</li>
+        </ul>
+      </div>
+      <div class="card anim-up d1">
+        <h3>Azure App Services</h3>
+        <ul class="checks">
+          <li><b>Plan tiers &amp; eligibility:</b> Consumption, Shared, Basic, Standard, Premium, and Isolated.</li>
+          <li><b>Runtime shape:</b> Windows vs Linux, Functions or Web Apps, integrations and registries.</li>
+          <li><b>Scaling behavior:</b> autoscale rules, fixed scale, allocated plan vs actual use.</li>
+        </ul>
+      </div>
+      <div class="card anim-up">
+        <h3>Event Hubs / Messaging</h3>
+        <ul class="checks">
+          <li><b>SKU fit:</b> Basic, Standard, Premium, and Dedicated capacity models.</li>
+          <li><b>Throughput design:</b> partitions, publisher-consumer activity, and performance trade-offs.</li>
+          <li><b>Elasticity:</b> scale-out and scale-back patterns across messaging workloads.</li>
+        </ul>
+      </div>
+      <div class="card anim-up d1">
+        <h3>Azure Databricks</h3>
+        <ul class="checks">
+          <li><b>Compute efficiency:</b> idle clusters, zombie compute, and dev-test DBUs running 24×7.</li>
+          <li><b>Storage behavior:</b> local-disk data residency, governance gaps, and ADLS alignment.</li>
+          <li><b>Commercial signals:</b> Savings Plan or RI fit, workload forecasting, and commit sizing.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner anim-up" style="margin-top:24px">CloudDIET uses deep, service-aware logic to find savings generic reporting tools miss.</div>
+  </div>
+</section>
+
+<!-- REPRESENTATIVE MEASURES + CASE STUDY -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head anim-up">
+      <span class="eyebrow">Representative measures</span>
+      <h2>What CloudDIET evaluates, by service family</h2>
+    </div>
+    <div class="split">
+      <div class="grid g-2 anim-up" style="gap:18px">
+        <div class="card"><h3 style="font-size:18px">Cosmos DB</h3><ul class="checks"><li>Write-replica regions used only for reads, or not at all</li><li>Instances with no data, or data but no reads/writes</li><li>Hot partitions, caching fit, indexing-consistency tuning</li></ul></div>
+        <div class="card"><h3 style="font-size:18px">App Services</h3><ul class="checks"><li>Consumption vs allocated spend by plan type</li><li>Misconfigured scale-out and fixed-scale plans without autoscale</li><li>Unused integration accounts and inactive registries</li></ul></div>
+        <div class="card"><h3 style="font-size:18px">Messaging</h3><ul class="checks"><li>Overprovisioned hubs/buses with no publisher or consumer activity</li><li>Partition sizing and throughput optimization</li><li>Standard vs Premium vs Dedicated SKU fit</li></ul></div>
+        <div class="card"><h3 style="font-size:18px">Databricks</h3><ul class="checks"><li>Idle or underutilized clusters and dev-test DBUs running continuously</li><li>Ungoverned storage and local-disk data residency</li><li>Commit-smarter guidance for DBU pre-purchase</li></ul></div>
+      </div>
+      <div class="anim-up d1">
+        <div class="card tint-blue accent-top" style="height:100%">
+          <span class="eyebrow">Customer case study</span>
+          <h3>Databricks startup overhead waste</h3>
+          <ul class="checks" style="margin-top:14px">
+            <li><b>Billing pattern:</b> some clusters burned ~20% more DBUs per job before real work began.</li>
+            <li><b>Root cause:</b> upstream pipelines created too many small files, increasing startup scan time.</li>
+            <li><b>Fix:</b> merge files into larger chunks to cut wasted startup overhead.</li>
+            <li><b>Result:</b> startup fell from 8 min to 2 min — ~18% lower Databricks cost, ~$50K saved annually.</li>
+          </ul>
+          <a class="btn btn-primary" style="margin-top:20px" href="case-studies.html">See full case studies
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="banner anim-up" style="margin-top:24px">CloudDIET then prioritizes opportunities by effort level — Minimal, Moderate, Planning.</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-band">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <div class="wrap"><div class="cta-inner anim-up">
+    <h2>Profiling starts in minutes</h2>
+    <p>No agents, no deployment. Configure a read-only Service Principal and reporting starts quickly.</p>
+    <div class="hero-actions"><a class="btn btn-grad" href="get-started.html">Start free preview</a>
+    <a class="btn btn-ghost on-dark" href="security.html">Security details</a></div>
+  </div></div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div class="about">
+        <span class="brand brand-on-dark"><img class="brand-logo" src="assets/cloudxai-logo.png" alt="CloudxAi" width="170" height="44"></span>
+        <p>From spend visibility to prioritized engineering action.</p>
+        <span class="cobrand on-dark" style="margin-top:18px">
+          <span class="dist">Distributor for</span>
+          <span class="cd-lockup">
+            <img class="cd-icon" src="assets/clouddiet-icon.svg" alt="CloudDIET" width="46" height="30" style="height:30px">
+            <span class="cd-words">
+              <span class="cd-name" style="font-size:19px"><b>Cloud</b><span class="lite">DIET</span></span>
+              <span class="cd-sub"><b>AZURE CLOUD</b> <span class="c">COST</span> OPTIMIZATION</span>
+            </span>
+          </span>
+        </span>
+      </div>
+      <div class="cols">
+        <div class="col">
+          <h4>Product</h4>
+          <a href="overview.html">Overview</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="platform.html">Platform</a>
+          <a href="security.html">Security</a>
+        </div>
+        <div class="col">
+          <h4>Company</h4>
+          <a href="partners.html">Partners</a>
+          <a href="case-studies.html">Case studies</a>
+          <a href="faq.html">FAQ</a>
+          <a href="get-started.html">Get started</a>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <a href="mailto:amit@cloudxai.sg">amit@cloudxai.sg</a>
+          <a href="https://www.cloudxai.sg" target="_blank" rel="noopener">www.cloudxai.sg</a>
+          <p>Singapore</p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 CloudxAi. CloudDIET is a product of its respective owner.</span>
+      <span>Azure Cloud Cost Optimization</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

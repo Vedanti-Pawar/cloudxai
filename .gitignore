@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor / temp
+*.log
+_probe.html
+scratchpad/

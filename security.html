@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security & Data Protection — Read-only by Design | CloudxAi</title>
+<meta name="description" content="How CloudDIET accesses, protects, and lets customers control Azure metadata: read-only RBAC, control-plane only, AES-256, and fully customer-revocable.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="CloudxAi home">
+      <img class="brand-logo" src="assets/cloudxai-logo.png" alt="CloudxAi" width="160" height="42">
+    </a>
+    <nav class="nav-links">
+      <a href="overview.html">Overview</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="platform.html">Platform</a>
+      <a href="partners.html">Partners</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="security.html" class="active">Security</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="get-started.html">Get started free</a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu">
+  <div class="mm-top">
+    <span class="brand brand-on-dark"><img class="brand-logo" src="assets/cloudxai-logo.png" alt="CloudxAi" width="160" height="42"></span>
+    <button class="mm-close" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="overview.html">Overview</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="platform.html">Platform</a>
+    <a href="partners.html">Partners</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="security.html">Security</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+  <a class="btn btn-grad" href="get-started.html">Get started free</a>
+  <div class="mm-theme" role="group" aria-label="Color theme">
+    <button class="mm-tbtn" data-set-theme="light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg> Light</button>
+    <button class="mm-tbtn" data-set-theme="dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg> Dark</button>
+  </div>
+</div>
+
+<div class="theme-toggle" role="group" aria-label="Color theme">
+  <button data-set-theme="light" aria-label="Light mode" title="Light mode">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+  <button data-set-theme="dark" aria-label="Dark mode" title="Dark mode">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg"><div class="hero-grid"></div><span class="blob b1"></span><span class="blob b2"></span></div>
+  <div class="wrap">
+    <p class="crumb">Security &amp; data protection</p>
+    <h1>Read-only <span class="grad-text">by design</span></h1>
+    <p>How CloudDIET accesses, protects, and lets customers control Azure metadata. No agents, no deployment, and no data-plane access to your tables, schemas, queries, or files.</p>
+  </div>
+</section>
+
+<!-- FOUR PILLARS -->
+<section class="section">
+  <div class="wrap">
+    <div class="grid g-2">
+      <div class="card accent-top anim-up">
+        <div class="num" style="font-family:var(--display);font-weight:700;color:var(--azure);margin-bottom:12px">01</div>
+        <h3>What CloudDIET can access</h3>
+        <ul class="checks">
+          <li>Billing, reservation, and savings-plan data.</li>
+          <li>Azure control-plane metadata and Azure Monitor metrics.</li>
+          <li><b>No data-plane access</b> to tables, schemas, blob contents, queries, or files.</li>
+        </ul>
+      </div>
+      <div class="card accent-top anim-up d1">
+        <div class="num" style="font-family:var(--display);font-weight:700;color:var(--azure);margin-bottom:12px">02</div>
+        <h3>Access is read-only and scoped</h3>
+        <ul class="checks">
+          <li>Customer-managed service principal with standard Azure RBAC.</li>
+          <li>Scoped only to selected Azure subscriptions.</li>
+          <li>Read-only control-plane access with no write or modification permissions.</li>
+        </ul>
+      </div>
+      <div class="card accent-top anim-up">
+        <div class="num" style="font-family:var(--display);font-weight:700;color:var(--azure);margin-bottom:12px">03</div>
+        <h3>How data is protected</h3>
+        <ul class="checks">
+          <li>AES-256 encryption in transit and at rest.</li>
+          <li>Minimal metadata retained for reporting, with customer-directed purge.</li>
+          <li>Just-in-time, logged employee access limited to a small support group.</li>
+        </ul>
+      </div>
+      <div class="card accent-top anim-up d1">
+        <div class="num" style="font-family:var(--display);font-weight:700;color:var(--azure);margin-bottom:12px">04</div>
+        <h3>Customer control and auditability</h3>
+        <ul class="checks">
+          <li>Audit sign-ins and RBAC assignments in Microsoft Entra / Azure.</li>
+          <li>Revoke access anytime by removing credentials, disabling the service principal, or removing RBAC roles.</li>
+          <li>CloudDIET employees cannot use customer service-principal credentials.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AT A GLANCE -->
+<section class="section-sm" style="background:var(--panel)">
+  <div class="wrap">
+    <div class="section-head anim-up" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow">At a glance</span>
+      <h2>Built for trust</h2>
+    </div>
+    <div class="chips anim-up" style="justify-content:center">
+      <span class="chip" style="background:var(--azure-100);color:var(--azure)">Read-only RBAC</span>
+      <span class="chip" style="background:var(--azure-100);color:var(--azure)">Control-plane only</span>
+      <span class="chip" style="background:var(--azure-100);color:var(--azure)">AES-256</span>
+      <span class="chip" style="background:var(--azure-100);color:var(--azure)">Customer-revocable</span>
+      <span class="chip" style="background:var(--azure-100);color:var(--azure)">No data-plane access</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-band">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <div class="wrap"><div class="cta-inner anim-up">
+    <h2>Security questions? Let's talk.</h2>
+    <p>We're happy to walk your security and compliance teams through the access model.</p>
+    <div class="hero-actions"><a class="btn btn-grad" href="mailto:amit@cloudxai.sg">Email amit@cloudxai.sg</a>
+    <a class="btn btn-ghost on-dark" href="faq.html">Read the FAQ</a></div>
+  </div></div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div class="about">
+        <span class="brand brand-on-dark"><img class="brand-logo" src="assets/cloudxai-logo.png" alt="CloudxAi" width="170" height="44"></span>
+        <p>From spend visibility to prioritized engineering action.</p>
+        <span class="cobrand on-dark" style="margin-top:18px">
+          <span class="dist">Distributor for</span>
+          <span class="cd-lockup">
+            <img class="cd-icon" src="assets/clouddiet-icon.svg" alt="CloudDIET" width="46" height="30" style="height:30px">
+            <span class="cd-words">
+              <span class="cd-name" style="font-size:19px"><b>Cloud</b><span class="lite">DIET</span></span>
+              <span class="cd-sub"><b>AZURE CLOUD</b> <span class="c">COST</span> OPTIMIZATION</span>
+            </span>
+          </span>
+        </span>
+      </div>
+      <div class="cols">
+        <div class="col">
+          <h4>Product</h4>
+          <a href="overview.html">Overview</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="platform.html">Platform</a>
+          <a href="security.html">Security</a>
+        </div>
+        <div class="col">
+          <h4>Company</h4>
+          <a href="partners.html">Partners</a>
+          <a href="case-studies.html">Case studies</a>
+          <a href="faq.html">FAQ</a>
+          <a href="get-started.html">Get started</a>
+        </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <a href="mailto:amit@cloudxai.sg">amit@cloudxai.sg</a>
+          <a href="https://www.cloudxai.sg" target="_blank" rel="noopener">www.cloudxai.sg</a>
+          <p>Singapore</p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 CloudxAi. CloudDIET is a product of its respective owner.</span>
+      <span>Azure Cloud Cost Optimization</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
