@@ -400,6 +400,12 @@ h1,h2,h3,h4 { font-family: var(--display); font-weight: 600; line-height: 1.1; l
 .step-divider span { font-family: var(--display); font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--azure); white-space: nowrap; }
 .step-divider::before, .step-divider::after { content: ""; height: 1px; flex: 1; background: var(--line); }
 
+/* real screenshots / figures from the deck */
+.shot { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: var(--shadow); background: #fff; }
+.shot-frame { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 12px; box-shadow: var(--shadow); }
+.shot-frame .shot { box-shadow: none; border-radius: 8px; }
+.shot-stack { display: grid; gap: 18px; }
+
 /* mock UI panel */
 .mock {
   background: var(--bg); border: 1px solid var(--line); border-radius: 16px; overflow: hidden;

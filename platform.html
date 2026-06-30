@@ -105,25 +105,7 @@
         </ul>
       </div>
       <div class="anim-up d1">
-        <div class="mock">
-          <div class="bar"><i></i><i></i><i></i><span class="mock-title">CloudDIET · Dashboard</span><span class="mock-badge">● Analysis complete</span></div>
-          <div class="body">
-            <div class="dash-kpis">
-              <div class="kpi"><div class="k">Spend · 30d</div><div class="v">$34,535</div></div>
-              <div class="kpi"><div class="k">Potential</div><div class="v" style="color:var(--azure)">$74,558</div></div>
-              <div class="kpi"><div class="k">Realized</div><div class="v" style="color:#0d9488">$22,674</div></div>
-              <div class="kpi"><div class="k">Subscriptions</div><div class="v">2</div></div>
-              <div class="kpi"><div class="k">Resources</div><div class="v">539</div></div>
-              <div class="kpi"><div class="k">Opportunities</div><div class="v">174</div></div>
-            </div>
-            <div class="dash-chart">
-              <div class="dash-chart-head"><span>Daily spend · last 30 days</span><span style="color:var(--azure)">▲ trending</span></div>
-              <div class="barchart">
-                <i style="height:60%"></i><i style="height:75%"></i><i style="height:55%"></i><i style="height:85%"></i><i style="height:70%"></i><i style="height:90%"></i><i style="height:65%"></i><i style="height:80%"></i><i style="height:72%"></i><i style="height:95%"></i><i style="height:60%"></i><i style="height:78%"></i><i style="height:68%"></i><i style="height:88%"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img class="shot" src="assets/pdf/dashboard.png" alt="CloudDIET dashboard showing spend, potential and realized savings, resource mix, daily spend, and opportunities" loading="lazy">
       </div>
     </div>
   </div>
@@ -137,6 +119,7 @@
       <h2>See where Azure savings stand before you drill in</h2>
       <p>Combine current spend, potential savings, and realized savings in a single portfolio view — and confirm when analysis is ready for action.</p>
     </div>
+    <img class="shot anim-up" src="assets/pdf/portfolio-strip.png" alt="Portfolio summary: spend $34,535, potential savings $74,558, realized savings $22,674, 2 subscriptions, 539 resources, analysis complete" loading="lazy" style="margin-bottom:28px">
     <div class="grid g-3">
       <div class="card accent-top anim-up">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
@@ -178,19 +161,7 @@
         </div>
       </div>
       <div class="anim-up d1">
-        <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
-            <div><b style="font-family:var(--display)">Potential Savings</b><div style="font-size:12px;color:var(--mute)">Discovered opportunities</div></div>
-            <div class="toggle-group"><button>Daily</button><button>Monthly</button><button class="active">Annual</button></div>
-          </div>
-          <p style="font-size:14px;color:var(--slate);margin:14px 0 16px">We found <b>174</b> optimizations and estimate you can reduce your annual Azure spend by <b>$178,201</b>.</p>
-          <div class="segbar"><span class="s-min" style="flex:48">48%</span><span class="s-mod" style="flex:21">21%</span><span class="s-plan" style="flex:30">30%</span></div>
-          <div class="seg-legend">
-            <div><span class="dot" style="background:var(--eff-min)"></span>Minimal Effort<b>$86,026</b></div>
-            <div><span class="dot" style="background:var(--eff-mod)"></span>Moderate Effort<b>$38,243</b></div>
-            <div><span class="dot" style="background:var(--eff-plan)"></span>Planning Required<b>$53,932</b></div>
-          </div>
-        </div>
+        <img class="shot" src="assets/pdf/potential-savings.png" alt="Potential Savings: 174 optimizations estimated to reduce annual Azure spend by $178,201 — Minimal $86,026 (48%), Moderate $38,243 (21%), Planning $53,932 (30%)" loading="lazy">
       </div>
     </div>
   </div>
@@ -210,20 +181,9 @@
           <li>Move from broad visibility to the categories that deserve investigation first.</li>
         </ul>
       </div>
-      <div class="anim-up d1">
-        <div class="mock">
-          <div class="bar"><span style="font-size:12px;color:var(--mute);font-family:var(--display);font-weight:600">Daily Spend · last 30 days</span></div>
-          <div class="body">
-            <div class="barchart soft">
-              <i style="height:70%"></i><i style="height:88%"></i><i style="height:62%"></i><i style="height:80%"></i><i style="height:95%"></i><i style="height:74%"></i><i style="height:60%"></i><i style="height:85%"></i><i style="height:78%"></i><i style="height:92%"></i><i style="height:66%"></i><i style="height:82%"></i><i style="height:70%"></i><i style="height:90%"></i>
-            </div>
-            <div class="treemap" style="margin-top:16px">
-              <span class="t1">Azure SQL</span><span class="t2">App Services</span><span class="t3">Data Factory</span>
-              <span class="t4">Virtual Machines</span><span class="t6">Storage</span>
-              <span class="t5">Network</span>
-            </div>
-          </div>
-        </div>
+      <div class="anim-up d1 shot-stack">
+        <img class="shot" src="assets/pdf/daily-spend.png" alt="Daily Spend chart — total spend over the last 30 days" loading="lazy">
+        <img class="shot" src="assets/pdf/resource-type-spend.png" alt="Resource Type Spend — spend over 30 days broken down by Azure resource type" loading="lazy">
       </div>
     </div>
   </div>
@@ -248,21 +208,9 @@
           <li>Surface the optimal commitment with explanations and confidence levels.</li>
         </ul>
       </div>
-      <div class="est-out anim-up d1" style="border-radius:var(--radius-lg)">
-        <span class="blob b1"></span><span class="blob b2"></span>
-        <span class="eyebrow on-dark" style="margin:0">Design</span>
-        <h3 style="color:#fff;margin:14px 0 6px">Tune coverage before you buy</h3>
-        <div class="est-row" style="border-bottom:0;padding-bottom:4px">
-          <span class="lab">Recommended Savings Plan commitment</span><span class="amt grad-text">$10,788<small style="color:#6c7c92;font-weight:500"> /mo</small></span>
-        </div>
-        <div class="kpi-row" style="margin:14px 0 18px">
-          <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">Actual billed</div><div class="v" style="color:#fff">$26,155</div></div>
-          <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">With plan</div><div class="v" style="color:var(--azure-400)">$18,545</div></div>
-          <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">Potential (3-yr)</div><div class="v" style="color:#fff">$273,962</div></div>
-        </div>
-        <div class="est-row"><span class="lab">Savings Plan term</span><span class="toggle-group on-dark"><button>1 Year</button><button class="active">3 Years</button></span></div>
-        <div class="est-row"><span class="lab">Commitment percent</span><span style="font-family:var(--display);font-weight:600;color:#aebbcd;font-size:13px">10 · 40 · 70 · 100</span></div>
-        <div class="est-row"><span class="lab">App Service SKU upgrades</span><span class="toggle-group on-dark"><button class="active">Include</button><button>Exclude</button></span></div>
+      <div class="anim-up d1 shot-stack">
+        <img class="shot" src="assets/pdf/savings-plan-analyze.png" alt="Savings Plan analysis — historical eligible spend compared with modeled Savings Plan and pay-as-you-go outcomes" loading="lazy">
+        <img class="shot" src="assets/pdf/savings-plan-design.png" alt="Savings Plan Designer — recommended commitment $10,788/mo; actual billed $26,155, with plan $18,545, potential savings $273,962 over the 3-year term" loading="lazy">
       </div>
     </div>
   </div>
@@ -283,11 +231,7 @@
         </ul>
       </div>
       <div class="anim-up d1">
-        <div class="kpi-row">
-          <div class="card metric tint-blue"><div class="num" style="font-size:24px">Table-level</div><div class="lbl">Visibility</div></div>
-          <div class="card metric tint-blue"><div class="num" style="font-size:24px">30-day</div><div class="lbl">Trend context</div></div>
-          <div class="card metric tint-blue"><div class="num" style="font-size:24px">Faster</div><div class="lbl">Root-cause analysis</div></div>
-        </div>
+        <img class="shot" src="assets/pdf/resource-explorer.png" alt="Resource Explorer — resource costs across subscriptions, services, regions and tags with latest-day and past-month cost trends" loading="lazy">
       </div>
     </div>
   </div>
@@ -305,6 +249,10 @@
       <div class="card feature anim-up"><div class="num">01</div><h3>Find resources</h3><p>Browse and filter costs across subscriptions, groups, services, regions, namespaces, and tags.</p></div>
       <div class="card feature anim-up d1"><div class="num">02</div><h3>Explain spend</h3><p>Pivot into cost and metric views over day, week, and month to understand what drives usage and cost.</p></div>
       <div class="card feature anim-up d2"><div class="num">03</div><h3>Prioritize action</h3><p>Pinpoint the resource, table, or feature driving cost and decide where to optimize next.</p></div>
+    </div>
+    <div class="grid g-2 anim-up" style="margin-top:24px">
+      <img class="shot" src="assets/pdf/cost-explorer-list.png" alt="Resource Explorer — filter resources by subscription, group, service, region and tags" loading="lazy">
+      <img class="shot" src="assets/pdf/cost-explorer-metric.png" alt="Cost and metric attribution view explaining what is driving spend over time" loading="lazy">
     </div>
   </div>
 </section>
@@ -325,11 +273,7 @@
         </ul>
       </div>
       <div class="anim-up d1">
-        <div class="kpi-row">
-          <div class="card metric tint-blue"><div class="num" style="font-size:22px;color:#0d9488">Current vs new</div><div class="lbl">Monthly cost</div></div>
-          <div class="card metric tint-blue"><div class="num" style="font-size:24px">44</div><div class="lbl">Instances mapped by license</div></div>
-          <div class="card metric tint-blue"><div class="num" style="font-size:22px">30-day</div><div class="lbl">Lookback &amp; pricing context</div></div>
-        </div>
+        <img class="shot" src="assets/pdf/sql-visibility.png" alt="SQL Licensing view — current vs new monthly cost, licensing comparison, and 44 SQL instances mapped by license" loading="lazy">
       </div>
     </div>
   </div>
