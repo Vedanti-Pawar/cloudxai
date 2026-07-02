@@ -171,19 +171,7 @@
         </div>
       </div>
       <div class="anim-up d1">
-        <div class="card pot-card">
-          <div class="pot-head">
-            <div><b>Potential Savings</b><small>Discovered opportunities</small></div>
-            <div class="toggle-group"><button>Daily</button><button>Monthly</button><button class="active">Annual</button></div>
-          </div>
-          <p class="pot-lede">We found <b>174</b> optimizations and estimate you can reduce your annual Azure spend by <b>$178,201</b>.</p>
-          <div class="segbar"><span class="s-min" style="flex:48">48%</span><span class="s-mod" style="flex:21">21%</span><span class="s-plan" style="flex:30">30%</span></div>
-          <div class="seg-legend">
-            <div><span class="dot" style="background:var(--eff-min)"></span>Minimal Effort<b>$86,026</b></div>
-            <div><span class="dot" style="background:var(--eff-mod)"></span>Moderate Effort<b>$38,243</b></div>
-            <div><span class="dot" style="background:var(--eff-plan)"></span>Planning Required<b>$53,932</b></div>
-          </div>
-        </div>
+        <img class="shot" src="assets/pdf/potential-savings.png" alt="Potential Savings: 174 optimizations estimated to reduce annual Azure spend by $178,201 — Minimal $86,026 (48%), Moderate $38,243 (21%), Planning $53,932 (30%)" loading="lazy">
       </div>
     </div>
   </div>
@@ -232,22 +220,7 @@
       </div>
       <div class="anim-up d1 shot-stack">
         <img class="shot" src="assets/pdf/savings-plan-analyze.png" alt="Savings Plan analysis — historical eligible spend compared with modeled Savings Plan and pay-as-you-go outcomes" loading="lazy">
-        <div class="est-out" style="border-radius:var(--radius-lg)">
-          <span class="blob b1"></span><span class="blob b2"></span>
-          <span class="eyebrow on-dark" style="margin:0">Recommended Savings Plan</span>
-          <div class="est-row" style="border-bottom:0;padding:6px 0 2px;align-items:flex-end">
-            <span class="lab">Recommended commitment</span><span class="amt grad-text" style="font-size:26px">$10,788<small style="color:#6c7c92;font-weight:500"> /mo</small></span>
-          </div>
-          <p style="font-size:12.5px;color:#7d8aa0;margin:0 0 16px">Optimized recommendation, inclusive of workload cyclicity.</p>
-          <div class="kpi-row" style="margin-bottom:18px">
-            <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">Actual billed</div><div class="v" style="color:#fff">$26,155</div></div>
-            <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">With plan</div><div class="v" style="color:var(--azure-400)">$18,545</div></div>
-            <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">Potential (3-yr)</div><div class="v" style="color:#fff">$273,962</div></div>
-          </div>
-          <div class="est-row"><span class="lab">Savings Plan term</span><span class="toggle-group on-dark"><button>1 Year</button><button class="active">3 Years</button></span></div>
-          <div class="est-row"><span class="lab">Commitment percent</span><span style="font-family:var(--display);font-weight:600;color:#aebbcd;font-size:13px">10 · 40 · 70 · 100</span></div>
-          <div class="est-row"><span class="lab">App Service SKU upgrades</span><span class="toggle-group on-dark"><button class="active">Include</button><button>Exclude</button></span></div>
-        </div>
+        <img class="shot" src="assets/pdf/savings-plan-commitment.png" alt="Recommended Savings Plan commitment $10,788/mo; actual billed spend $26,155, with Savings Plan $18,545, potential savings $273,962 over the 3-year term" loading="lazy">
       </div>
     </div>
   </div>
@@ -268,7 +241,7 @@
         </ul>
       </div>
       <div class="anim-up d1">
-        <img class="shot" src="assets/pdf/resource-explorer.png" alt="Resource Explorer — resource costs across subscriptions, services, regions and tags with latest-day and past-month cost trends" loading="lazy">
+        <img class="shot wide" src="assets/pdf/cost-breakdown.png" alt="Cost breakdown to table level — a Log Analytics Workspace broken down to StorageBlobLogs, AzureDiagnostics, AppServiceHTTPLogs and more, with latest cost and past-30-day trend per table" loading="lazy">
       </div>
     </div>
   </div>
@@ -287,10 +260,9 @@
       <div class="card feature anim-up d1"><div class="num">02</div><h3>Explain spend</h3><p>Pivot into cost and metric views over day, week, and month to understand what drives usage and cost.</p></div>
       <div class="card feature anim-up d2"><div class="num">03</div><h3>Prioritize action</h3><p>Pinpoint the resource, table, or feature driving cost and decide where to optimize next.</p></div>
     </div>
-    <div class="grid g-2 anim-up" style="margin-top:24px">
-      <img class="shot" src="assets/pdf/cost-explorer-list.png" alt="Resource Explorer — filter resources by subscription, group, service, region and tags" loading="lazy">
-      <img class="shot" src="assets/pdf/cost-explorer-metric.png" alt="Cost and metric attribution view explaining what is driving spend over time" loading="lazy">
-    </div>
+    <img class="shot wide anim-up" src="assets/pdf/discovered-opportunities.png" alt="Discovered savings opportunities by resource type — Azure Cosmos DB $54,962, Azure App Services $32,995, Microsoft Fabric $14,103 — each with scale/config optimizations, resolution effort, and potential annual savings" loading="lazy" style="margin-top:24px">
+    <img class="shot anim-up d1" src="assets/pdf/cost-explorer-metric.png" alt="Cost and metric attribution view explaining what is driving spend over time" loading="lazy" style="margin-top:18px">
+  </div>
   </div>
 </section>
 
