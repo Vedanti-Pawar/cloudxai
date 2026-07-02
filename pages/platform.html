@@ -2,7 +2,7 @@
 <section class="page-hero">
   <div class="hero-bg"><div class="hero-grid"></div><span class="blob b1"></span><span class="blob b2"></span></div>
   <div class="wrap">
-    <p class="crumb">The CloudDIET Platform</p>
+    <p class="crumb">Dashboard Overview</p>
     <h1>Your command center for <span class="grad-text">Azure cost</span></h1>
     <p>Spend visibility, savings discovery, and optimization tracking — in one place. Monitor spend trends, surface high-value opportunities, and give engineering teams a clear place to start each day.</p>
   </div>
@@ -53,7 +53,17 @@
       <h2>See where Azure savings stand before you drill in</h2>
       <p>Combine current spend, potential savings, and realized savings in a single portfolio view — and confirm when analysis is ready for action.</p>
     </div>
-    <img class="shot anim-up" src="assets/pdf/portfolio-strip.png" alt="Portfolio summary: spend $34,535, potential savings $74,558, realized savings $22,674, 2 subscriptions, 539 resources, analysis complete" loading="lazy" style="margin-bottom:28px">
+    <div class="port-strip anim-up" style="margin-bottom:28px">
+      <div class="ps-head"><span class="dot3"><i></i><i></i><i></i></span> CloudDIET · Portfolio summary <span class="badge">● Analysis complete</span></div>
+      <div class="ps-grid">
+        <div class="ps-kpi"><div class="k">Spend</div><div class="v">$34,535</div><div class="s">During the past 30 days</div></div>
+        <div class="ps-kpi"><div class="k">Potential savings</div><div class="v" style="color:var(--azure)">$74,558</div><div class="s">Annually across all subscriptions</div></div>
+        <div class="ps-kpi"><div class="k">Realized savings</div><div class="v" style="color:#0d9488">$22,674</div><div class="s">Annually across all subscriptions</div></div>
+        <div class="ps-kpi"><div class="k">Subscriptions</div><div class="v">2</div><div class="s">Profiled</div></div>
+        <div class="ps-kpi"><div class="k">Resources</div><div class="v">539</div><div class="s">Across all subscriptions</div></div>
+        <div class="ps-kpi"><div class="k">Analysis</div><div class="v" style="font-size:19px">Complete</div><div class="s">Last profiled 03/18/2026</div></div>
+      </div>
+    </div>
     <div class="grid g-3">
       <div class="card accent-top anim-up">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
@@ -88,14 +98,26 @@
         <span class="eyebrow">Savings categories</span>
         <h2>Quick wins first. Bigger savings next.</h2>
         <p class="lead">CloudDIET groups opportunities by the customer effort required to turn identified savings into realized savings.</p>
-        <div style="display:grid;gap:14px;margin-top:8px">
-          <div><span class="chip min">Minimal effort</span><p style="font-size:14.5px;color:var(--slate);margin-top:8px">Mostly admin / config changes. FinOps or cloud-admin skills. ROI in days to 2 weeks.</p></div>
-          <div><span class="chip mod">Moderate effort</span><p style="font-size:14.5px;color:var(--slate);margin-top:8px">Validation, owner alignment, managed change window. ROI in 2 to 6 weeks.</p></div>
-          <div><span class="chip plan">Planning required</span><p style="font-size:14.5px;color:var(--slate);margin-top:8px">Roadmap, architecture, or migration planning. ROI over 1 to 2 quarters.</p></div>
+        <div class="eff-tiers">
+          <div class="eff-tier eff-min"><span class="chip min">Minimal effort</span><p>Mostly administrative or configuration changes · FinOps / cloud-admin skills · ROI in days to 2 weeks.</p></div>
+          <div class="eff-tier eff-mod"><span class="chip mod">Moderate effort</span><p>Validation, owner alignment, and a managed change window · app &amp; platform teams · ROI in 2 to 6 weeks.</p></div>
+          <div class="eff-tier eff-plan"><span class="chip plan">Planning required</span><p>Roadmap, architecture, or migration planning · architects &amp; engineering leads · ROI over 1 to 2 quarters.</p></div>
         </div>
       </div>
       <div class="anim-up d1">
-        <img class="shot" src="assets/pdf/potential-savings.png" alt="Potential Savings: 174 optimizations estimated to reduce annual Azure spend by $178,201 — Minimal $86,026 (48%), Moderate $38,243 (21%), Planning $53,932 (30%)" loading="lazy">
+        <div class="card pot-card">
+          <div class="pot-head">
+            <div><b>Potential Savings</b><small>Discovered opportunities</small></div>
+            <div class="toggle-group"><button>Daily</button><button>Monthly</button><button class="active">Annual</button></div>
+          </div>
+          <p class="pot-lede">We found <b>174</b> optimizations and estimate you can reduce your annual Azure spend by <b>$178,201</b>.</p>
+          <div class="segbar"><span class="s-min" style="flex:48">48%</span><span class="s-mod" style="flex:21">21%</span><span class="s-plan" style="flex:30">30%</span></div>
+          <div class="seg-legend">
+            <div><span class="dot" style="background:var(--eff-min)"></span>Minimal Effort<b>$86,026</b></div>
+            <div><span class="dot" style="background:var(--eff-mod)"></span>Moderate Effort<b>$38,243</b></div>
+            <div><span class="dot" style="background:var(--eff-plan)"></span>Planning Required<b>$53,932</b></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -144,7 +166,22 @@
       </div>
       <div class="anim-up d1 shot-stack">
         <img class="shot" src="assets/pdf/savings-plan-analyze.png" alt="Savings Plan analysis — historical eligible spend compared with modeled Savings Plan and pay-as-you-go outcomes" loading="lazy">
-        <img class="shot" src="assets/pdf/savings-plan-design.png" alt="Savings Plan Designer — recommended commitment $10,788/mo; actual billed $26,155, with plan $18,545, potential savings $273,962 over the 3-year term" loading="lazy">
+        <div class="est-out" style="border-radius:var(--radius-lg)">
+          <span class="blob b1"></span><span class="blob b2"></span>
+          <span class="eyebrow on-dark" style="margin:0">Recommended Savings Plan</span>
+          <div class="est-row" style="border-bottom:0;padding:6px 0 2px;align-items:flex-end">
+            <span class="lab">Recommended commitment</span><span class="amt grad-text" style="font-size:26px">$10,788<small style="color:#6c7c92;font-weight:500"> /mo</small></span>
+          </div>
+          <p style="font-size:12.5px;color:#7d8aa0;margin:0 0 16px">Optimized recommendation, inclusive of workload cyclicity.</p>
+          <div class="kpi-row" style="margin-bottom:18px">
+            <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">Actual billed</div><div class="v" style="color:#fff">$26,155</div></div>
+            <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">With plan</div><div class="v" style="color:var(--azure-400)">$18,545</div></div>
+            <div class="kpi" style="background:rgba(255,255,255,.05);border-color:var(--dark-line)"><div class="k">Potential (3-yr)</div><div class="v" style="color:#fff">$273,962</div></div>
+          </div>
+          <div class="est-row"><span class="lab">Savings Plan term</span><span class="toggle-group on-dark"><button>1 Year</button><button class="active">3 Years</button></span></div>
+          <div class="est-row"><span class="lab">Commitment percent</span><span style="font-family:var(--display);font-weight:600;color:#aebbcd;font-size:13px">10 · 40 · 70 · 100</span></div>
+          <div class="est-row"><span class="lab">App Service SKU upgrades</span><span class="toggle-group on-dark"><button class="active">Include</button><button>Exclude</button></span></div>
+        </div>
       </div>
     </div>
   </div>

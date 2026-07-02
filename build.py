@@ -15,7 +15,7 @@ NAV = [
      "CloudDIET goes beyond spend dashboards: profiling billing, usage, and configuration to find the engineering, commercial, and architectural root causes of Azure waste."),
     ("how-it-works",  "How It Works", "How CloudDIET Works — Read-only Azure Profiling | CloudxAi",
      "Daily read-only profiling feeds Azure-specific analysis, prioritized actions, and measurable cost outcomes — with service-aware engineering intelligence."),
-    ("platform",      "Platform",     "The CloudDIET Platform — Dashboard, Cost & Savings Tools | CloudxAi",
+    ("platform",      "Dashboard",    "CloudDIET Dashboard Overview — Cost & Savings Tools | CloudxAi",
      "The command center for Azure spend visibility, savings discovery, and optimization tracking: dashboard, Cost Explorer, Savings Plan Designer, Resource Explorer, and SQL Visibility."),
     ("partners",      "Partners",     "Partner Value Proposition — Sell, Deliver, Grow | CloudxAi",
      "CloudDIET gives Systems Integrator partners a low-friction way to assess Azure, scope follow-on work, and turn one-time projects into managed FinOps services."),
